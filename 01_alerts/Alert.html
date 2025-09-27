@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Page</title>
+    <link rel="stylesheet" href="./Alert.css">
+</head>
+<body>
+    <h1>Welcome to Alert Page</h1>
+    <p>This page demonstrates how to handle alerts in web automation.</p>
+
+    <button onclick="showAlert()">Simple Alert</button><span>Simple Alert</span><br><br>
+    <button  onclick="showConfirm()">Confirm Alert</button><span>Confirm Alert</span><br><br>
+    <button  onclick="showPrompt()">Prompt Alert</button><span>Prompt Alert</span><br>
+
+    <script>
+        function showAlert() {
+            alert("This is an alert message!");
+        }
+
+
+        function showConfirm() {
+            const result = confirm("Do you want to proceed?");
+            if (result) {
+                alert("You pressed OK!");
+            } else {
+                alert("You pressed Cancel!");
+            }
+        }
+        function showPrompt() {
+            const userInput = prompt("Please enter your name:");
+            if (userInput !== null) {
+                alert("Hello, " + userInput + "!");
+            } else {
+                alert("You cancelled the prompt.");
+            }
+        }
+    </script>
+
+    <p><a href="/index.html">Back to Home</a></p>
+    
+</body>
+</html>
