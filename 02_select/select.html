@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Theme Test Form</title>
+  <link rel="stylesheet" href="select.css">
+</head>
+<body>
+  <h2>Dark Theme Test Form</h2>
+
+  <form id="testForm">
+    <!-- Dropdown -->
+    <div class="form-group">
+      <label for="products">Products:</label>
+      <select id="products">
+        <option value="">-- Select Product --</option>
+        <option value="new">New Arrivals</option>
+        <option value="bestseller">Best Sellers</option>
+        <option value="sale">On Sale</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="resources">Resources:</label>
+      <select id="resources">
+        <option value="">-- Select Resource --</option>
+        <option value="docs">Documentation</option>
+        <option value="api">API Reference</option>
+        <option value="forum">Community Forum</option>
+      </select>
+    </div>
+
+    <!-- Radio Buttons -->
+    <div class="form-group">
+      <label>Choose Plan:</label>
+      <label><input type="radio" name="plan" value="basic"> Basic</label>
+      <label><input type="radio" name="plan" value="premium"> Premium</label>
+      <label><input type="radio" name="plan" value="enterprise"> Enterprise</label>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="form-group">
+      <label>Features:</label>
+      <label><input type="checkbox" name="feature" value="analytics"> Analytics</label>
+      <label><input type="checkbox" name="feature" value="reports"> Reports</label>
+      <label><input type="checkbox" name="feature" value="integration"> Integration</label>
+    </div>
+
+    <!-- Text Input -->
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter username">
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label for="comments">Comments:</label>
+      <textarea id="comments" placeholder="Enter your comments"></textarea>
+    </div>
+
+    <!-- Buttons -->
+    <div class="form-group">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+  <p id="output"></p>
+
+  <script src="select.js"></script>
+</body>
+</html>
